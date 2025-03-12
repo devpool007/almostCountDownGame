@@ -6,9 +6,8 @@ export default function Player() {
 
   function handleClick() {
     const value = playerName.current.value;
-    if (value) {
       setEnteredName(value);
-    }
+    playerName.current.value = ''
   }
 
   return (
@@ -21,3 +20,4 @@ export default function Player() {
     </section>
   );
 }
+
